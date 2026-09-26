@@ -37,7 +37,6 @@ function Login({ onLoginSuccess, onShowSignup }) {
       alert("Unable to connect to the server.");
     }
   };
-
   return (
     <div className="login-page">
       <div className="login-card">
@@ -54,16 +53,13 @@ function Login({ onLoginSuccess, onShowSignup }) {
             value={email}
             onChange={(event) => setEmail(event.target.value)}
           />
-
           <label>Password</label>
-
           <input
             type="password"
             placeholder="Enter your password"
             value={password}
             onChange={(event) => setPassword(event.target.value)}
           />
-
           <button className="login-button" type="submit">
             Login
           </button>
@@ -78,5 +74,4 @@ function Login({ onLoginSuccess, onShowSignup }) {
     </div>
   );
 }
-
 export default Login;
